@@ -1,0 +1,15 @@
+print('Enter the amount of time you want to set a timer for')
+hours=int(input('Hours:'))
+minute=int(input('Minutes:' ))
+second=int(input('Seconds:'))
+print("Counting down now! \n")
+def countdown(hours,minute,second):
+    import time
+    second=hours*3600+minute*60+second
+    while second >= 0:
+        time.sleep(1)
+        second -= 1
+    print('Your times up!')
+
+
+countdown(hours,minute,second)
